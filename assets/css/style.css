@@ -30,7 +30,7 @@ a,a:hover,a:active,a:focus {
 h1,h2,h3,h4,h5,h6 { 
 	margin: 0;
 	color:#43485c;
-    font-size: 16px;
+    font-size: 20px;
 	font-family: 'Poppins', sans-serif;
 	text-transform: capitalize;
 }
@@ -217,8 +217,8 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 /*-------------------------------------
         4.  About
 --------------------------------------*/
-.about {padding: 50px 0 100px;}
-.about-content {padding-top: 100px;}
+.about {padding: 50px 0 50px;}
+.about-content {padding-top: 50px;}
 /*.single-about-txt*/
 .single-about-txt h3 {
     font-size:18px;
@@ -302,7 +302,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 --------------------------------------*/
 
 .education-horizontal-timeline {
-    padding: 80px 0;
+    padding: 50px 0;
 }
 
 /*.education-horizontal-timeline*/
@@ -339,76 +339,56 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         6.  Skills
 --------------------------------------*/
 .skills {
-    
+    background-color: #f9f9f9;
 }
-.skill-content{padding: 50px 0 80px;}
-.single-skill-content{padding-top: 100px;}
-.section-heading h2 {
-    font-size: 24px;
+
+
+.skill-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-icon {
+    font-size: 50px;
+    color: #007bff;
+    margin-bottom: 15px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.skill-card:hover .skill-icon {
+    color: #0056b3;
+}
+
+.skill-card h4 {
+    font-size: 20px;
     font-weight: 600;
-    text-transform: uppercase;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #e5ebf2;
+    margin-bottom: 10px;
+    color: #333;
 }
-.single-progress-txt {
-    display: flex;
-}
-.single-progress-txt h3 {
-    width: 10%;
-    color: #a606c3;
-    position: relative;
-    top: 6px;
-    left: 20px;
-}
-.barWrapper {
-    font-weight: 400;
-    font-size: 16px;
-    text-transform: uppercase;
-}
-.progress {
-    border-radius:3px;
-    overflow: visible;
-    background: #e6ecf3;
-    height:8px;
-    margin-top: 15px;
-    width: 85%;
-    margin-bottom: 37px;
-}
-.progress-bar {
-   background: #b636ff;
-    border-radius: 3px;
-   -webkit-transition: width 1.5s ease-in-out;
-   -ms-transition: width 1.5s ease-in-out;
-   -moz-transition: width 1.5s ease-in-out;
-   -o-transition: width 1.5s ease-in-out;
-   transition: width 1.5s ease-in-out;
-}
-.tooltip{
-   position:relative;
-   float:right;
-}
-.tooltip > .tooltip-inner {
-   background-color: transparent;
-   padding: 1px 5px;
-   color: #b636ff;
-   font-weight: 500;
-   font-size: 12px;
-   border-radius: 0;
-}
-.popOver + .tooltip > .tooltip-arrow {
-   border-left: 6px solid transparent;
-   border-right: 6px solid transparent;
-   border-top: 6px solid #fff;
-   bottom: -1px;
-   transform: translateX(-50%);
-   margin-left: 0;
+
+.skill-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
 }
 
 /*-------------------------------------
         7. Experience
 -------------------------------------*/
 
-.experience-content {padding-top: 100px;}
+.experience-content {padding-top: 50px;}
 .single-timeline-box {margin-bottom: 75px;}
 
 /*experience-time*/
@@ -484,10 +464,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .experience-time-responsive{display: none;}
 /*-------------------------------------
         8. Profiles
---------------------------------------*/
+-------------------------------------*/
 
 
-.profiles-content {padding-top: 100px;}
+.profiles-content {padding-top: 50px;}
 .profiles-content .col-sm-3{padding:0;}
 .profile-txt {
     display: flex;
@@ -556,10 +536,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .single-profile:hover .profile-border {border:transparent;}
 /*-------------------------------------
         9. Portfolio
---------------------------------------*/
+-------------------------------------*/
 
 
-.portfolio-content {padding-top: 100px;}
+.portfolio-content {padding-top: 50px;}
 
 /* ---- .item ---- */
 .isotope:after {
@@ -629,7 +609,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
 /*-------------------------------------
         10. Clients
---------------------------------------*/
+-------------------------------------*/
 .clients-area {
     display: flex;
     align-items: center;
@@ -646,9 +626,9 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
 /*-------------------------------------
         11. Contact
---------------------------------------*/
+-------------------------------------*/
 
-.single-contact-box {padding-top: 100px;}
+.single-contact-box {padding-top: 50px;}
 .contact-form  .form-group {
     margin-bottom: 20px;
     
@@ -809,14 +789,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     100%  {bottom:7px;}
 }
 
-/*======================= Span=================*/
+
 
 #msg{
     color: #53b172;
     margin-top: 10px;
     display: block;
 }
-
-
-
-/*========================Thank you=================*/
